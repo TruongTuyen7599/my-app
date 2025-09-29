@@ -8,7 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "husky",
+    "precommit": "lint-staged",
+    "test": "jest --watchAll",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "react": "^19.1.1",
